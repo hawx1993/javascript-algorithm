@@ -3,8 +3,9 @@
  * output：[ -1, 0, 0, 1, 1, 2, 3, 4, 5, 5 ]
  */
 
-export default function flatArray(targetArray) {
+function flatArray(targetArray) {
   return targetArray.reduce((sum, value) => {
     return sum.concat(value);
   }, []);
 }
+export default flatArray;

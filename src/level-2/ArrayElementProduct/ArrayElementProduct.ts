@@ -8,7 +8,7 @@
  * productExceptSelf(thirdArray); // [12, 12, 8, -12]
  */
 
-function productOfArrayExceptSelf(arr){
+function productOfArrayExceptSelf(arr: number[]){
   let runningProduct = 1;
   let newArr = [];
   for(let i = 0 ; i < arr.length ; i++){

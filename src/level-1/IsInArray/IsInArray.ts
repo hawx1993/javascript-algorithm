@@ -8,8 +8,9 @@
  * ["apple","banana","pineapple"] //returns true;
  * ["grape", "pineapple"] //returns false;
  */
-export default function isInArray(targetArray, sourceArray) {
+function isInArray(targetArray, sourceArray) {
   return sourceArray.some(v => {
     return targetArray.indexOf(v) > -1;
   });
 }
+export default isInArray;

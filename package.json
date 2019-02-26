@@ -1,6 +1,6 @@
 {
   "name": "javascript-common-algorithm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "javascript common algorithm in daily working",
   "main": "index.js",
   "scripts": {
@@ -24,10 +24,15 @@
   },
   "homepage": "https://github.com/hawx1993/javascript-algorithm#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-env": "^7.3.4",
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.9.5",
+    "babel-jest": "^24.1.0",
     "babel-preset-env": "^1.7.0",
-    "jest": "23.6.0",
-    "pre-commit": "^1.2.2"
+    "jest": "^24.1.0",
+    "pre-commit": "^1.2.2",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.3333"
   },
   "dependencies": {}
 }
