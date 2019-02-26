@@ -1,6 +1,6 @@
 # JavaScript Common Algorithms
 
-This repository is included common used algorithms in daily working.
+This repository is included common used algorithms in daily working. Each of functions not more than 20 lines
 
 
 ## Get Started
