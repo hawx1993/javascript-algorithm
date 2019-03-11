@@ -3,7 +3,7 @@
  * output [9, 4]
  */
 function findDuplicateItems(array) {
-  let sortedArr = array.slice().sort();
+  let sortedArr = array.slice().sort();// array.slice() return shadow copy
   let results = [];
   for (let i = 0; i < sortedArr.length - 1; i++) {
     if (sortedArr[i + 1] == sortedArr[i]) {

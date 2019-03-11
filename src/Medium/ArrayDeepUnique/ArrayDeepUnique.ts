@@ -3,7 +3,7 @@
  * input: [{a:1,b:1},1,'1',{a:1,b:1},1,false,true,false,NaN,NaN,[1,2],[1,2]]
  * output: [ { a: 1, b: 1 }, 1, '1', false, true, NaN, [ 1, 2 ] ]
  */
-function deepDeduplication(array) {
+function deepDuplication(array) {
   var n = {}, r = [], len = array.length, val, type;
   for (var i = 0; i < len; i++) {
     val = array[i];
@@ -18,4 +18,4 @@ function deepDeduplication(array) {
   }
   return r;
 }
-export { deepDeduplication }
+export { deepDuplication }

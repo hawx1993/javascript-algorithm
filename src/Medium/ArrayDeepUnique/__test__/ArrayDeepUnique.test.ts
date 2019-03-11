@@ -1,4 +1,4 @@
-import { deepDeduplication } from '../ArrayDeepDeduplication';
+import { deepDuplication } from '../ArrayDeepUnique';
 const arrays1 = [
   { a: 1, b: 1 },
   1,
@@ -15,11 +15,11 @@ const arrays1 = [
 ];
 
 const array2 = [1, 2, 3, 3, [NaN], [NaN], -1];
-describe('deepDeduplication', () => {
+describe('deepDuplication', () => {
   it('should return unique array  while get arrays1', () => {
-    expect(deepDeduplication(arrays1)).toMatchObject([ { a: 1, b: 1 }, 1, '1', false, true, NaN, [ 1, 2 ] ])
+    expect(deepDuplication(arrays1)).toMatchObject([ { a: 1, b: 1 }, 1, '1', false, true, NaN, [ 1, 2 ] ])
   });
   it('should return unique array  while get arrays2', () => {
-    expect(deepDeduplication(array2)).toMatchObject([1,2,3, [NaN], -1 ])
+    expect(deepDuplication(array2)).toMatchObject([1,2,3, [NaN], -1 ])
   });
 });
